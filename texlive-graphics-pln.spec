@@ -1,3 +1,9 @@
+# revision 16917
+# category Package
+# catalog-ctan /macros/plain/graphics
+# catalog-date 2010-01-03 16:55:09 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-graphics-pln
 Version:	20100103
 Release:	1
@@ -53,6 +59,7 @@ provides the LaTeX picture mode to Plain TeX users.
 %doc %{_texmfdistdir}/doc/plain/graphics-pln/exmplpic.tex
 #- source
 %doc %{_texmfdistdir}/source/plain/graphics-pln/autopict.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,3 +70,5 @@ provides the LaTeX picture mode to Plain TeX users.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
