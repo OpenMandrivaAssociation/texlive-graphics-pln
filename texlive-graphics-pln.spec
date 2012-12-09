@@ -60,3 +60,17 @@ provides the LaTeX picture mode to Plain TeX users.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100103-2
++ Revision: 752374
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100103-1
++ Revision: 718578
+- texlive-graphics-pln
+- texlive-graphics-pln
+- texlive-graphics-pln
+- texlive-graphics-pln
+
