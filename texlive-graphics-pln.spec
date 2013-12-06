@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-graphics-pln
 Version:	20100103
-Release:	4
+Release:	5
 Summary:	LaTeX-style graphics for Plain TeX users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/plain/graphics
