@@ -1,12 +1,6 @@
-# revision 16917
-# category Package
-# catalog-ctan /macros/plain/graphics
-# catalog-date 2010-01-03 16:55:09 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-graphics-pln
-Version:	20100103
-Release:	10
+Version:	20170612
+Release:	1
 Summary:	LaTeX-style graphics for Plain TeX users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/plain/graphics
@@ -37,19 +31,10 @@ provides the LaTeX picture mode to Plain TeX users.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/plain/graphics-pln/autopict.sty
-%{_texmfdistdir}/tex/plain/graphics-pln/color.tex
-%{_texmfdistdir}/tex/plain/graphics-pln/graphicx.tex
-%{_texmfdistdir}/tex/plain/graphics-pln/miniltx.tex
-%{_texmfdistdir}/tex/plain/graphics-pln/picture.tex
-%{_texmfdistdir}/tex/plain/graphics-pln/psfrag.tex
-%doc %{_texmfdistdir}/doc/plain/graphics-pln/00readme.txt
-%doc %{_texmfdistdir}/doc/plain/graphics-pln/exmplcol.tex
-%doc %{_texmfdistdir}/doc/plain/graphics-pln/exmplgrf.tex
-%doc %{_texmfdistdir}/doc/plain/graphics-pln/exmplpfg.tex
-%doc %{_texmfdistdir}/doc/plain/graphics-pln/exmplpic.tex
+%{_texmfdistdir}/tex/plain/graphics-pln
+%doc %{_texmfdistdir}/doc/plain/graphics-pln
 #- source
-%doc %{_texmfdistdir}/source/plain/graphics-pln/autopict.ins
+%doc %{_texmfdistdir}/source/plain/graphics-pln
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,17 +45,3 @@ provides the LaTeX picture mode to Plain TeX users.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100103-2
-+ Revision: 752374
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100103-1
-+ Revision: 718578
-- texlive-graphics-pln
-- texlive-graphics-pln
-- texlive-graphics-pln
-- texlive-graphics-pln
-
