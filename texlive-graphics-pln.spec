@@ -1,5 +1,5 @@
 Name:		texlive-graphics-pln
-Version:	20170612
+Version:	20180118
 Release:	1
 Summary:	LaTeX-style graphics for Plain TeX users
 Group:		Publishing
@@ -7,7 +7,6 @@ URL:		http://www.ctan.org/tex-archive/macros/plain/graphics
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphics-pln.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphics-pln.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphics-pln.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -33,15 +32,13 @@ provides the LaTeX picture mode to Plain TeX users.
 %files
 %{_texmfdistdir}/tex/plain/graphics-pln
 %doc %{_texmfdistdir}/doc/plain/graphics-pln
-#- source
-%doc %{_texmfdistdir}/source/plain/graphics-pln
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar tex doc %{buildroot}%{_texmfdistdir}
