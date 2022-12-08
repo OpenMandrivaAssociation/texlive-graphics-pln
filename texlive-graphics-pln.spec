@@ -1,5 +1,5 @@
 Name:		texlive-graphics-pln
-Version:	64553
+Version:	65187
 Release:	1
 Summary:	LaTeX-style graphics for Plain TeX users
 Group:		Publishing
