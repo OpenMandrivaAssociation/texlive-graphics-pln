@@ -1,6 +1,6 @@
 Name:		texlive-graphics-pln
 Version:	65187
-Release:	1
+Release:	2
 Summary:	LaTeX-style graphics for Plain TeX users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/plain/graphics
