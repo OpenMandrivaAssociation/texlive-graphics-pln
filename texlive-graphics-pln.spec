@@ -3,7 +3,7 @@ Version:	71575
 Release:	1
 Summary:	LaTeX-style graphics for Plain TeX users
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/plain/graphics
+URL:		https://www.ctan.org/tex-archive/macros/plain/graphics
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphics-pln.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/graphics-pln.doc.r%{version}.tar.xz
